@@ -1,0 +1,59 @@
+#welcome {
+  // display: inline-flex;
+  display:flex;
+  justify-content: center;
+  flex-direction: row;
+  max-height: 400px;
+
+  @include heading-font;
+  padding-top: calc(6rem + 72px);
+  background-color: $primary;
+  color: $secondary;
+  #p-welcome {
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+  }
+  
+
+  #lwin-myint {
+    font-size: 4rem;
+    line-height: 3rem;
+    padding-top: 2.5rem;
+    margin-bottom: 5rem;
+    width:35rem;
+    padding-left: 13rem;
+  }
+
+  #welcome-graphic {
+    width:35em;
+    max-height:20em;
+    padding-top: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  #p-welcome {
+    font-size: 1.1em;
+    line-height: 1.7rem;
+    text-align: left;
+    width: 35rem;
+    margin-top: -1.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+    max-height:250px;
+    padding-left: 9rem;
+    padding-right: 7.5rem;
+    p {
+      margin-bottom: 25px;
+    }
+  }
+
+  @media (max-width: 1500px) { 
+    #p-welcome {
+      padding-left: 0rem;
+      padding-right: 0rem;
+      font-size: .7em;
+      line-height: 1.2em;
+    }
+  }
+}

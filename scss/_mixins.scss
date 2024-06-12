@@ -1,0 +1,11 @@
+@mixin body-font() {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin heading-font() {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+}
