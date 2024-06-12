@@ -1,0 +1,100 @@
+// Styling for the portfolio section
+#portfolio {
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5vw;
+    height: 3vh;
+    position:absolute;
+    top:40%;
+    scale: 150%;
+  }
+
+  background-color: rgba(246, 246, 246, 0.603);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5%;
+  position: relative;
+  height:auto;
+
+  #portfolio-text {
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 48rem;
+  }
+
+  .carousel {
+    display: inline-block;
+    height: auto;    
+    padding: 1em;
+    margin: 3em;
+    flex-grow: 1;
+    flex-basis: 40%;
+    cursor: pointer;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left:1em;
+    margin-top:1em;
+    height: 92%;
+    width: 95.5%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    pointer-events: none;
+  }
+ 
+  .overlay-text {
+    color: white;
+    font-size: 4rem;
+    line-height: 4rem;
+    font-weight: bolder;
+    @include heading-font;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    pointer-events: none;
+  }
+  
+  #play-icon {
+    transform: scale(.4);
+  }
+
+  @media (min-width: 576px) {
+    .modal-lg {
+      max-width: 70%;
+    }
+  }
+  .modal-content {
+    height:80vh;
+    background: transparent;
+  }
+
+  .modal-body {
+    height: 100%; /* Adjust for header and footer height */
+    overflow-y: auto;
+    overflow:hidden;
+  }
+
+  .close {
+    // border: none; /* Remove borders if desired */
+    color: white;
+    transform: scale(1.5);
+    position: absolute;
+    top: 2rem; /* Adjust to desired position from the top */
+    right: 4rem; /* Keep the button aligned to the right */
+    z-index: 1051; /* Ensure it appears above the modal content */
+  }
+}

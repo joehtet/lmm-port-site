@@ -1,0 +1,56 @@
+header.masthead {
+  padding-top: calc(6rem + 72px);
+  padding-bottom: 6rem;
+
+  background: url("https://i.imgur.com/H8hkszS.jpg");
+
+  /* parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+    @include body-font;
+  }
+
+  .header-line {
+    max-width: 36rem;
+    padding: 0rem;
+    text-align: center;
+    border: none;
+    border-top: solid 0.3rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    padding-top: calc(6rem + 106px);
+    padding-bottom: 6rem;
+
+    background: url("https://i.imgur.com/H8hkszS.jpg");
+
+    /* parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1 {
+      font-size: 4.75em;
+      line-height: 4rem;
+    }
+    h2 {
+      font-size: 2.25em;
+    }
+  }
+}
